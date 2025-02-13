@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: auto;
-  flex:1;
+  flex: 1;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -18,6 +18,13 @@
 .hero {
   grid-column: 1/6;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding:20px;
 }
 
 .about {
@@ -35,74 +42,87 @@
   grid-row: 3;
 }
 
-
 /* Responsive Home */
 
 @media only screen and (max-width: 1536px) {
-    .container{
-        background-color: aqua;
-    }
+  .container {
+    background-color: aqua;
+  }
 }
-
 
 @media only screen and (max-width: 1280px) {
-    .container{
-        background-color: #00ff37;
-    }
+  .container {
+    background-color: #00ff37;
+  }
 }
 
-
 @media only screen and (max-width: 1024px) {
-    .container{
-        background-color: #96093f;
-    }
+  .container {
+    background-color: #96093f;
+  }
+
+ 
+/* 
+  .hero{
+    padding:20px 10px;
+  } */
+}
+
+@media only screen and (max-width: 900px) {
+  
 }
 
 
 @media only screen and (max-width: 768px) {
-    .container{
-        background-color: #ff00bf;
-    }
-}
+  .container {
+    background-color: #ff00bf;
+  }
 
+  .hero{
+    padding:20px 10px;
+  }
+}
 
 @media only screen and (max-width: 640px) {
-    .container{
-        background-color: #ff6600;
-        grid-template-rows: minmax(150px, 1.5fr) minmax(200px, 2fr) minmax(150px,1.5fr) auto;
-    }
+  .container {
+    background-color: #ff6600;
+    grid-template-rows: minmax(150px, 1.5fr) minmax(200px, 2fr) minmax(150px,1.5fr) auto;
+  }
 
-    .about{
-        grid-column:1/6;
-        grid-row: 2;
-    }
+ 
+  .about {
+    grid-column: 1/6;
+    grid-row: 2;
+  }
 
-    .project-category{
-        grid-column:1/4;
-        grid-row:3;
-    }
+  .project-category {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
 
-    .more-project{
-        grid-column:4/6;
-        grid-row:3;
-    }
+  .more-project {
+    grid-column: 4/6;
+    grid-row: 3;
+  }
 
-    .progress-bar{
-        grid-column: 1/6;
-        grid-row:4;
-    }
+  .progress-bar {
+    grid-column: 1/6;
+    grid-row: 4;
+  }
 }
-
 
 @media only screen and (max-width: 425px) {
-    .container{
-        background-color: #fbff00;
-    }
+  .container {
+    background-color: #fbff00;
+  }
 }
 
-
 @media only screen and (max-width: 375px) {
-    .container{
-        background-color: aqua;
-    }
+  .container {
+    background-color: aqua;
+  }
+
+  .hero{
+    padding:20px 13px;
+  }
 }

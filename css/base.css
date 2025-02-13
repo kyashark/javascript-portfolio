@@ -7,7 +7,6 @@
 body{
     /* background-color: palevioletred; */
     height: 100vh;
-
 }
 
 main{
@@ -16,7 +15,7 @@ main{
     min-height:calc(100vh - 70px);
     /* background-color: purple; */
     margin:0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     display: flex;
 }
 
