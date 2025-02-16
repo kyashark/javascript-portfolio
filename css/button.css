@@ -1,0 +1,50 @@
+button{
+    font-family:"Inria Sans", serif ;
+    font-weight:500;
+}
+
+.link-btn{
+    border-radius: 5px;
+    border:1.2px solid #000000;
+    background-color: #ffffff;
+    padding:4px 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.link-btn img{
+    width: 22px;
+    height: 22px;
+    align-items:right;
+}
+
+.link-btn h6{
+    font-weight: 600;
+    font-size:0.9rem;
+}
+
+.link-btn:hover{
+    background-color: #FFEEA8;
+}
+
+.view-project-btn{
+    margin-top: 5px;
+    border-radius: 5px;
+    width:130px;
+    padding:4px 6px;
+    font-weight: 600;
+    font-size:0.95rem;
+    cursor: pointer;
+    background-color: #000000;
+    border:1px solid #000000;
+    color: #ffffff;
+}
+
+.view-project-btn:hover{
+    background-color: #111111;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}

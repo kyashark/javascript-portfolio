@@ -1,86 +1,142 @@
-h1{
-    font-size:3.4rem;
-    font-family: "Jersey 20", serif;
-    font-weight:500;
+/* Hero */
+h1 {
+  font-size: 3.4rem;
+  font-family: "Jersey 20", serif;
+  font-weight: 500;
 }
 
-h3{
-    font-family: "Inria Sans", serif;
-    font-size:1.3rem;
+/* Hero Para */
+h4 {
+  font-family: "Inria Sans", serif;
+  font-size: 1.3rem;
 }
 
+/* Card Topic */
+h3 {
+  font-family: "Jersey 20", serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.project-category h3 {
+  background-color: #f4dc72;
+  width: fit-content;
+  padding-right: 7px;
+  padding-left: 3px;
+}
+
+.more-project h3 {
+  background-color: #ffffff;
+  width: fit-content;
+  padding-right: 7px;
+  padding-left: 3px;
+}
+
+.progress-bar h3 {
+  background-color: #f4dc72;
+  width: fit-content;
+  padding-right: 7px;
+  padding-left: 3px;
+}
+
+/* Card Para */
+.para-2 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Inria Sans", serif;
+}
+
+/* Progress lavel topic */
+h5 {
+  font-family: "Inria Sans", serif;
+  font-size: 1rem;
+}
+
+/* Progress lavel descriptions */
+.para-3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Inria Sans", serif;
+  margin-top: 1.8px;
+}
 
 /* Responsive Font */
 
-
-@media only screen and (max-width: 1536px){
-
+@media only screen and (max-width: 1536px) {
 }
 
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 3.2rem;
+  }
 
-@media only screen and (max-width: 1280px){
-    h1{
-        font-size: 3.3rem;
-    }
+  .para-3 {
+    font-size: 0.9rem;
+  }
 }
 
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3.1rem;
+  }
 
-@media only screen and (max-width: 1024px){
-    h1{
-        font-size: 3rem;
-    }
+  h4 {
+    font-size: 1.2rem;
+  }
 
-    h3{
-        font-size: 1.2rem;
-    }
-    
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .para-2 {
+    font-size: 1rem;
+  }
 }
 
-/* New breakpoint */
 @media only screen and (max-width: 900px) {
-    h1 {
-        font-size: 2.6rem;
-    }
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .para-3 {
+    font-size: 0.8rem;
+  }
+
+  .para-2 {
+    font-size: 0.95rem;
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+  }
 
-@media only screen and (max-width:768px){
-    h1 {
-        font-size: 2.3rem;
-    }
+  h4 {
+    font-size: 1.1rem;
+  }
 
-    h3{
-        font-size: 1.1rem;
-    } 
+  h3 {
+    font-size: 1.35rem;
+  }
 }
 
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.2rem;
+  }
 
-
-
-@media only screen and (max-width: 640px){
-    h1{
-        font-size: 2.2rem;
-    }
-
-    h3{
-        font-size: 1rem;
-    }
+  h3 {
+    font-size: 1.4rem;
+  }
 }
 
-
-@media only screen and (max-width: 425px){
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h3{
-        font-size: 0.9rem;
-    }
-
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
-
-@media only screen and (max-width: 375px){
-
+@media only screen and (max-width: 375px) {
 }
