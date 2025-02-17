@@ -1,11 +1,28 @@
 button{
     font-family:"Inria Sans", serif ;
     font-weight:500;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding:4px 6px;
+    font-weight: 600;
+    font-size:1rem;
+    cursor: pointer;
+    background-color: #000000;
+    border:1px solid #000000;
+    color: #ffffff;
 }
+
+
+button:hover{
+
+}
+
+/* Link Button */
 
 .link-btn{
     border-radius: 5px;
     border:1.2px solid #000000;
+    color: #000000;
     background-color: #ffffff;
     padding:4px 8px;
     cursor: pointer;
@@ -30,21 +47,45 @@ button{
     background-color: #FFEEA8;
 }
 
+
+/* Category Button */
+
+.category-btn{
+    width: 130px;
+    padding: 5px;
+}
+
+.category-btn:hover{
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Project Button */
+
+.view-code-btn,
 .view-project-btn{
-    margin-top: 5px;
-    border-radius: 5px;
-    width:130px;
-    padding:4px 6px;
-    font-weight: 600;
-    font-size:0.95rem;
-    cursor: pointer;
+    width:120px;
+}
+
+.view-code-btn{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.view-code-btn:hover,
+.view-project-btn:hover{
     background-color: #000000;
-    border:1px solid #000000;
     color: #ffffff;
 }
 
-.view-project-btn:hover{
-    background-color: #111111;
-    transform: scale(1.01);
-    transition: all 0.3s ease-in-out;
+.view-project-btn{
+    background-color: #f4dc72;
+    color:#000000;
 }
+
+
+
+
+
+
+

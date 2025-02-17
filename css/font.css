@@ -1,21 +1,20 @@
-/* Hero */
+/* Topic */
 h1 {
   font-size: 3.4rem;
   font-family: "Jersey 20", serif;
   font-weight: 500;
 }
 
-/* Hero Para */
-h4 {
-  font-family: "Inria Sans", serif;
-  font-size: 1.3rem;
-}
-
-/* Card Topic */
-h3 {
+h2{
   font-family: "Jersey 20", serif;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+}
+
+h3{
+  font-family: "Jersey 20", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .project-category h3 {
@@ -39,13 +38,48 @@ h3 {
   padding-left: 3px;
 }
 
-/* Card Para */
-.para-2 {
-  font-size: 1.05rem;
-  font-weight: 400;
-  line-height: 25px;
-  font-family: "Inria Sans", serif;
+.projects-grid .category h3{
+  width: fit-content;
+  padding-right: 7px;
+  padding-left: 5px;
 }
+
+.projects-grid .category:nth-child(1) h3{
+  background-color: #D8D8D8;
+
+}
+
+.projects-grid .category:nth-child(2) h3{
+  background-color: #FFEEA8;
+}
+
+.projects-grid .category:nth-child(3) h3{
+  background-color: #F4DC72;
+
+}
+
+.projects-grid .category:nth-child(4) h3{
+  background-color: #9DCAE2;
+}
+
+.projects-grid .category:nth-child(5) h3{
+  background-color: #7BA2EA;
+
+}
+
+.projects-grid .category:nth-child(6) h3{
+  background-color: #A0DFA8;
+}
+
+.projects-grid .category:nth-child(7) h3{
+  background-color: #CBB1F8;
+}
+
+.projects-grid .category:nth-child(8) h3{
+  background-color: #E29696;
+}
+
+
 
 /* Progress lavel topic */
 h5 {
@@ -53,13 +87,38 @@ h5 {
   font-size: 1rem;
 }
 
+
+/* Paragraph */
+
+.main-para {
+  font-family: "Inria Sans", serif;
+  font-size: 1.3rem;
+}
+
+.para-2 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Inria Sans", serif;
+}
+
+.para-3{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Inria Sans", serif;
+}
+
+
 /* Progress lavel descriptions */
-.para-3 {
+.para-4 {
   font-size: 0.95rem;
   font-weight: 500;
   font-family: "Inria Sans", serif;
   margin-top: 1.8px;
 }
+
+
 
 /* Responsive Font */
 
@@ -71,7 +130,7 @@ h5 {
     font-size: 3.2rem;
   }
 
-  .para-3 {
+  .para-4 {
     font-size: 0.9rem;
   }
 }
@@ -81,7 +140,7 @@ h5 {
     font-size: 3.1rem;
   }
 
-  h4 {
+  .main-para {
     font-size: 1.2rem;
   }
 
@@ -99,13 +158,11 @@ h5 {
     font-size: 2.7rem;
   }
 
-  .para-3 {
+  .para-4 {
     font-size: 0.8rem;
   }
 
-  .para-2 {
-    font-size: 0.95rem;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -113,7 +170,7 @@ h5 {
     font-size: 2.3rem;
   }
 
-  h4 {
+  .main-para {
     font-size: 1.1rem;
   }
 
