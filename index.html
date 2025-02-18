@@ -11,8 +11,8 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="category.html">Projects</a></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Games</a></li>
         </ul>
@@ -90,22 +90,24 @@
         </div>
 
         <div class="project-category card">
-            <h3>Get Started</h3>
+            <h3>Getting Started</h3>
             <p class="para-2">Introductory projects and hands-on practice for skill improvement</p>
-            <button class="category-btn">View projects</button>
+            <button class="category-btn" onClick="goToProjects('gettingStarted')">View projects</button>
         </div>
 
-        <div class="more-project card">
-            <img src="./images/arrow.png">
-            <div class="more-project-text">
-                <h3>More </h3>
-                <h3>Projects</h3>
+            <div class="more-project card" onclick="goToPage()">
+                <img src="./images/arrow.png">
+                <div class="more-project-text">
+                    <h4>More Projects</h4>
+                </div>
+    
             </div>
 
-        </div>
+        
 
     </main>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
