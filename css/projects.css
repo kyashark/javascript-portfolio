@@ -6,12 +6,8 @@
   margin-bottom: 30px;
 }
 
-.projects-container h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .projects-grid {
+  margin-top: 40px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(280px, 1fr) minmax(280px, 1fr));
@@ -26,7 +22,6 @@
 .project > section:nth-child(1) {
   width: 100%;
   height: 200px;
-  background-color: tomato;
   border-radius: 5px;
   border: 1px solid #000000;
   margin-bottom: 10px;
@@ -51,14 +46,11 @@
 /* Responsive Home */
 
 @media only screen and (max-width: 1536px) {
-  .projects-container {
-    /* background-color: aqua; */
-  }
+
 }
 
 @media only screen and (max-width: 1280px) {
   .projects-container {
-    /* background-color: #00ff37; */
     width: 85%;
     padding: 0px 50px;
   }
@@ -66,14 +58,12 @@
 
 @media only screen and (max-width: 1024px) {
   .projects-container {
-    /* background-color: #96093f; */
     padding: 30px 30px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .projects-container {
-    /* background-color: #96093f; */
     width: 90%;
     padding: 0px 10px;
   }
@@ -81,9 +71,8 @@
 
 @media only screen and (max-width: 768px) {
   .projects-container {
-    /* background-color: #ff00bf; */
     width: 95%;
-    padding: 10px;
+    padding: 9px;
   }
 
   .projects-grid {
@@ -93,8 +82,7 @@
 
 @media only screen and (max-width: 640px) {
   .projects-container {
-    /* background-color: #ff6600; */
-    padding: 30px 70px;
+    padding: 30px 65px;
   }
 
   .projects-grid {
@@ -102,15 +90,18 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .projects-container {
+    padding: 30px 40px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .projects-container {
-    /* background-color: #fbff00; */
     padding: 30px 30px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .projects-container {
-    /* background-color: aqua; */
-  }
+
 }

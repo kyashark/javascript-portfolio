@@ -80,12 +80,6 @@ main {
   left: 90%;
 }
 
-.more-project-text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
 .more-project:hover {
   transform: scale(1.03);
   transition: all 0.3s ease-in-out;
@@ -208,14 +202,11 @@ main {
 /* Responsive Home */
 
 @media only screen and (max-width: 1536px) {
-  main {
-    /* background-color: aqua; */
-  }
+
 }
 
 @media only screen and (max-width: 1280px) {
   main {
-    /* background-color: #00ff37; */
     width: 85%;
   }
 
@@ -226,9 +217,7 @@ main {
 }
 
 @media only screen and (max-width: 1024px) {
-  main {
-    background-color: #96093f;
-  }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -239,7 +228,6 @@ main {
 
 @media only screen and (max-width: 768px) {
   main {
-    background-color: #ff00bf;
     width: 92%;
   }
 
@@ -255,7 +243,6 @@ main {
 
 @media only screen and (max-width: 640px) {
   main {
-    background-color: #ff6600;
     grid-template-rows: 1fr auto auto auto;
     height: auto;
   }
@@ -303,10 +290,6 @@ main {
 }
 
 @media only screen and (max-width: 425px) {
-  main {
-    /* background-color: #fbff00; */
-  }
-
   .more-project-text {
     display: flex;
     flex-direction: column;
@@ -315,10 +298,6 @@ main {
 }
 
 @media only screen and (max-width: 375px) {
-  main {
-    /* background-color: aqua; */
-  }
-
   .hero {
     padding: 20px 13px;
   }
