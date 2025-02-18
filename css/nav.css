@@ -1,0 +1,56 @@
+nav {
+  font-family: "Jersey 20", serif;
+}
+
+nav ul {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover {
+  color: #f4dc72;
+}
+
+/* Responsive Navigation */
+
+@media only screen and (max-width: 1536px) {
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 425px) {
+  nav ul {
+    gap: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}

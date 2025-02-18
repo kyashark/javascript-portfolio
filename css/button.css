@@ -1,0 +1,85 @@
+button {
+  font-family: "Inria Sans", serif;
+  font-weight: 500;
+  margin-top: 5px;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+/* Link Button */
+
+.link-btn {
+  border-radius: 5px;
+  border: 1.2px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.link-btn img {
+  width: 22px;
+  height: 22px;
+  align-items: right;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.link-btn h6 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.link-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Category Button */
+
+.category-btn {
+  width: 130px;
+  padding: 5px;
+}
+
+.category-btn:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Project Button */
+
+.view-code-btn,
+.view-project-btn {
+  width: 120px;
+}
+
+.view-code-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.view-code-btn:hover {
+  background-color: #f4dc72;
+  color: #000000;
+}
+
+.view-project-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.view-project-btn:hover {
+  background-color: #f4dc72;
+  color: #000000;
+}
