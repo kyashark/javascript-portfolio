@@ -1,21 +1,44 @@
 const projectCategory = {
   fundamentals: {
     categoryId: "F",
-    name: "Fundementals",
+    name: "Fundamentals",
     description:
       "Basic JavaScript exercises focus on variables, loops, functions, and logic to solve problems like sorting, counting, and condition checking",
     status: "Under construction fine-tuning my JavaScript foundation",
     projects: [
-      
-            {
-                name: "Calculator",
-                description: "Basic calculator with JavaScript functions.",
-                coverImage: "images/calculator.png",
-                viewCode: "https://github.com/yourusername/calculator",
-                viewProject: "https://yourusername.github.io/calculator/",
-                tag:"highlights"
-            },
-            
+      {
+        name: "Simple Counter",
+        description:
+          "A basic JavaScript project to increase, decrease, and reset a counter using button clicks",
+        coverImage: "./images/project-covers/simple-counter.png",
+        viewCode: "https://github.com/kyashark/simple-counter",
+        viewProject: "https://kyashark.github.io/simple-counter/",
+        // tag: "highlights",
+      },
+      {
+        name: "Random Color",
+        description:
+          "Generates a random RGB background color on button click using JavaScript",
+        coverImage: "./images/project-covers/random-color.png",
+        viewCode: "https://github.com/kyashark/random-color",
+        viewProject: "https://kyashark.github.io/random-color/",
+      },
+      {
+        name: "Simple Interactive Page",
+        description:
+          "A JavaScript project that handles user input to display personalized messages",
+        coverImage: "./images/project-covers/simple-interactive.png",
+        viewCode: "https://github.com/kyashark/simple-interactive-page",
+        viewProject: "https://kyashark.github.io/simple-interactive-page/",
+      },
+      {
+        name: "Window Resize",
+        description:
+          "Displays live window size updates using the resize event listener for real-time tracking",
+        coverImage: "./images/project-covers/window-resize.png",
+        viewCode: "https://github.com/kyashark/window-resize",
+        viewProject: "https://kyashark.github.io/window-resize/",
+      },
     ],
   },
   gettingStarted: {
@@ -24,7 +47,41 @@ const projectCategory = {
     description:
       "Beginner-friendly projects to practice JavaScript basics, DOM manipulation, and simple interactive features",
     status: "Setting the stage—projects coming together shortly",
-    projects: [],
+    projects: [
+      {
+        name: "Dice Roller",
+        description:
+          "A simple dice roller that generates random dice values based on user input",
+        coverImage: "./images/project-covers/dice-roller.png",
+        viewCode: "https://github.com/kyashark/dice-roller",
+        viewProject: "https://kyashark.github.io/dice-roller/",
+      },
+      {
+        name: "Quiz App",
+        description:
+          "A basic quiz app that tracks your score and displays the final result",
+        coverImage: "./images/project-covers/quiz-app.png",
+        viewCode: "https://github.com/kyashark/quiz-app",
+        viewProject: "https://kyashark.github.io/quiz-app/",
+      },
+      {
+        name: "Form Validation",
+        description:
+          "A basic signup form with client-side validation to ensure user input is validated before submission",
+        coverImage: "./images/project-covers/form-validation.png",
+        viewCode: "https://github.com/kyashark/js-form-validation",
+        viewProject: "https://kyashark.github.io/js-form-validation/",
+      },
+      {
+        name: "Palindrome Checker",
+        description:
+          "Palindrome Checker determines whether a word or phrase reads the same forward and backward, ignoring spaces, punctuation, and case",
+        coverImage: "./images/project-covers/palindrome-checker.png",
+        viewCode: "https://github.com/kyashark/palindrome-checker",
+        viewProject: "https://kyashark.github.io/palindrome-checker/",
+        tag: "highlights"
+      },
+    ],
   },
   reactFundamentals: {
     categoryId: "RF",
@@ -40,7 +97,17 @@ const projectCategory = {
     description:
       " Hands-on projects that use APIs, user interactions, and real-time data to make engaging experiences",
     status: "Exploring ideas—projects just around the corner",
-    projects: [],
+    projects: [
+      {
+        name: "Image Color Picker",
+        description:
+          "This project lets users upload an image, pick a color using the EyeDropper API, and view the color in Hex and RGB formats. Users can also copy the color values to the clipboard.",
+        coverImage: "./images/project-covers/image-color-picker.png",
+        viewCode: "https://github.com/kyashark/image-color-picker",
+        viewProject: "https://kyashark.github.io/image-color-picker/",
+        tag: "highlights"
+      },
+    ],
   },
   frontendExperiment: {
     categoryId: "FE",
@@ -88,11 +155,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function goToPage(categoryKey = "") {
-    if (categoryKey) {
-        window.location.href = `projects.html?category=${categoryKey}`;
-    } else {
-        window.location.href = `category.html`;
-    }
+  if (categoryKey) {
+    window.location.href = `projects.html?category=${categoryKey}`;
+  } else {
+    window.location.href = `category.html`;
+  }
 }
 
 function getCategoryFromURL() {
@@ -124,8 +191,8 @@ function displayProjects() {
                     <h3>${project.name}</h3>
                     <p class="para-3">${project.description}</p>
                     <div class="button-tab">
-                        <a href="${project.viewCode}"><button class="view-code-btn">View Code</button></a>
-                        <a href="${project.viewProject}"><button class="view-project-btn">View Project</button></a>
+                        <button class="view-code-btn" onclick="window.open('${project.viewCode}', '_blank')">View Code</button>
+                        <button class="view-project-btn" onclick="window.open('${project.viewProject}', '_blank')">View Project</button>
                     </div>
                 `;
       }
@@ -154,8 +221,8 @@ function displayHighlightsProjects() {
                     <h3>${project.name}</h3>
                     <p class="para-3">${project.description}</p>
                     <div class="button-tab">
-                        <a href="${project.viewCode}"><button class="view-code-btn">View Code</button></a>
-                        <a href="${project.viewProject}"><button class="view-project-btn">View Project</button></a>
+                        <button class="view-code-btn" onclick="window.open('${project.viewCode}', '_blank')">View Code</button>
+                        <button class="view-project-btn" onclick="window.open('${project.viewProject}', '_blank')">View Project</button>
                     </div>
                     
                     `;

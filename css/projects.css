@@ -10,10 +10,7 @@
   margin-top: 40px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(280px, 1fr) minmax(280px, 1fr)
-  );
+  grid-template-columns: repeat(auto-fill,minmax(280px, 1fr) minmax(280px, 1fr));
   grid-template-rows: auto;
   gap: 35px;
 }
@@ -22,18 +19,25 @@
   padding: 20px;
 }
 
+.project img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .project > section:nth-child(1) {
   width: 100%;
   height: 200px;
   border-radius: 5px;
   border: 1px solid #000000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .project > section:nth-child(2) {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   text-align: left;
 }
 
@@ -100,7 +104,7 @@
 
 @media only screen and (max-width: 425px) {
   .projects-container {
-    padding: 30px 30px;
+    padding: 30px;;
   }
 }
 

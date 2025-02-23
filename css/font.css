@@ -55,12 +55,12 @@ h3 {
   background-color: #ffeea8;
 }
 
-.projects-grid .category:nth-child(3) h3 {
+.projects-grid .category:nth-child(4) h3 {
   background-color: #f4dc72;
 }
 
-.projects-grid .category:nth-child(4) h3 {
-  background-color: #9dcae2;
+.projects-grid .category:nth-child(3) h3 {
+  background-color: #bad6e4;
 }
 
 .projects-grid .category:nth-child(5) h3 {
